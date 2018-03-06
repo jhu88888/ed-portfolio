@@ -1,0 +1,21 @@
+@import '../../../assets/global/global_variables.scss';
+
+.portfolio-section {
+    height: 100vh;
+
+    .central-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 150px);
+
+        .title {
+            font-family: $title-font;
+            font-style: $title-style;
+            font-size: $title-size;
+            font-weight: $title-weight;
+            margin: 0;
+        }
+    }
+}
+

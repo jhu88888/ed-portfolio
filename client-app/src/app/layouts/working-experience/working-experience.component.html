@@ -1,0 +1,14 @@
+<div class="section-wrapper bg-white" id="full-stack">
+  <div class="ui container">
+    <div class="ui three column grid">
+      <div class="three column row centered align">
+        <div class="ui large label" *ngFor="let lang of languages">
+          <i class="{{lang.class}} icon" [style.color]="lang.color"></i> {{lang.name}}
+        </div>
+      </div>
+      <div class="column">1</div>
+      <div class="column">2</div>
+      <div class="column">3</div>
+    </div>
+  </div>
+</div>
