@@ -1,16 +1,19 @@
 <div class="ui container">
   <div class="ui text menu">
-    <div class="header item">
+    <a class="header item" [class.active]="currentSection == 'portfolio'" scrollTo href="#portfolio">
       @Ed
-    </div>
-    <a class="item" scrollTo href="#full-stack">
+    </a>
+    <a class="item" [class.active]="currentSection == 'full-stack'" scrollTo href="#full-stack">
       Full Stack
     </a>
-    <a class="item" scrollTo href="#working-on">
+    <a class="item" [class.active]="currentSection == 'working-on'" scrollTo href="#working-on">
       Working On
     </a>
-    <a class="item" scrollTo href="#uxd">
+    <a class="item" [class.active]="currentSection == 'uxd'" scrollTo href="#uxd">
       UXD
+    </a>
+    <a class="item" [class.active]="currentSection == 'more'" scrollTo href="#more">
+      More
     </a>
     <div class="right menu">
       <a class="ui item">

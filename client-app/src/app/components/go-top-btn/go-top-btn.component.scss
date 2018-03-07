@@ -1,0 +1,55 @@
+.steps-wrapper {
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    padding-top: 10px;
+
+    .step-wrapper {
+        width: 35px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .go-top-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #dfdfdf;
+
+            i {
+                margin: 0;
+            }
+        }
+        
+        .go-top-btn.active {
+            color: rgba(0,0,0,.6);
+        }
+    }
+
+    .step-btn-wrapper {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .go-top-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(0,0,0,.6);
+
+            i {
+                margin: 0;
+            }
+        }    
+    }
+}
+
+// .go-top-btn {
+//     background-color: #b2b2b2;
+// }
+
+// .go-top-btn:visited, .go-top-btn:active, .go-top-btn:focus {
+//     background-color: #b2b2b2;
+// }

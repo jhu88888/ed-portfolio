@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
 
 @Component({
-  selector: 'top-nav',
-  templateUrl: './top-nav.component.html',
-  styleUrls: ['./top-nav.component.scss']
+  selector: 'go-top-btn',
+  templateUrl: './go-top-btn.component.html',
+  styleUrls: ['./go-top-btn.component.scss']
 })
-export class TopNavComponent implements OnInit {
+export class GoTopBtnComponent implements OnInit {
 
   private currentSection
 

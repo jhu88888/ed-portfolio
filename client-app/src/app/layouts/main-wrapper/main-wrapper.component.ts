@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'main-wrapper',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainWrapperComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public el: ElementRef
+  ) { }
 
   ngOnInit() {
+  }
+
+  showGoTopBtn() {
+    console.log(123)
   }
 
 }

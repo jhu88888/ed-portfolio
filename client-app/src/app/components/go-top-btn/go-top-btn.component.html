@@ -1,0 +1,17 @@
+<div class="ui column steps-wrapper">
+  <div 
+    *ngFor="let item of ['portfolio', 'full-stack', 'working-on', 'uxd', 'more']" 
+    class="ui row step-wrapper">
+    <a class="go-top-btn" scrollTo href="#{{item}}" [class.active]="item == currentSection">
+      <i class="minus outline small icon"></i>
+    </a>
+  </div>
+  <div class="ui row step-btn-wrapper" *ngIf="currentSection != 'portfolio'">
+    <a class="go-top-btn" scrollTo href="#portfolio">
+      <i class="chevron up small icon"></i>
+    </a>
+  </div>
+</div>
+
+
+

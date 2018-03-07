@@ -1,0 +1,15 @@
+.extends {
+    height: 200vh;;
+
+    .left-aligned {
+        text-align: left;
+
+        i {
+            text-align: left;
+        }
+
+        .content{
+            text-align: left;
+        }
+    }
+}

@@ -1,14 +1,26 @@
-<div class="section-wrapper bg-white" id="full-stack">
+<div class="section-wrapper extends bg-white" id="full-stack">
   <div class="ui container">
-    <div class="ui three column grid">
-      <div class="three column row centered align">
-        <div class="ui large label" *ngFor="let lang of languages">
-          <i class="{{lang.class}} icon" [style.color]="lang.color"></i> {{lang.name}}
-        </div>
+    <h3 class="ui icon header left-aligned">
+      <i class="code icon"></i>
+      <div class="content">
+        Skill sets
+        <div class="sub header">Rating is based on self-confidence from previous projects.</div>
       </div>
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
+    </h3>
+    <div>
+      <div style="display: block; width: 95%; margin: 25px 0;">
+        <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType"
+                [colors]="barChartColor"></canvas>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+    <div>
+      asd
     </div>
   </div>
 </div>
